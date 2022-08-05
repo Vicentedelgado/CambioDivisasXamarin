@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CambioDivisas04_08_2022.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="23" CornerRadius="0">
+            <Label Text="Convertidor de Divisas" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Hola Bienvenido a tu convertidor de Divisas" FontSize="16" Padding="30,0,30,0"/>
+        <Label Text="Intruduce la cantidad en Dolares"></Label>
+        <Entry x:Name="Dolares" Keyboard="Numeric"></Entry>
+        <Label></Label>
+
+        <Button Text="De Dólares a Pesos Mexicanos" x:Name="Pesos_Mexicanos" Clicked="Pesos_Mexicanos_Clicked"></Button>
+        <Button Text="De Dólares a Euros" x:Name="Euros" Clicked="Euros_Clicked"></Button>
+        <Button Text="De Dólares a Libras Esterlinas" x:Name="Libras" Clicked="Libras_Clicked"></Button>
+        <Button Text="De Dólares a Yen Japonés" x:Name="Yen" Clicked="Yen_Clicked"></Button>
+        <Button Text="De Dólares a Sol Peruano" x:Name="Soles" Clicked="Soles_Clicked"></Button>
+        <Label></Label>
+        <Label FontSize="Medium" x:Name="Resultado" HorizontalTextAlignment="Center"></Label>
+    </StackLayout>
+
+</ContentPage>
